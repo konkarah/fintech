@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register class</title>
+    <style>
+    body {
+        background: url('pic1.jpg');
+        background-size: cover;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .wrap {
+        max-width: 350px;
+        border-radius: 20px;
+        margin: auto;
+        background: rgba(0,0,0,0.8);
+        box-sizing: border-box;
+        padding: 40px;
+        color: #ffffff;
+        margin-top: 100px;
+    }
+    .wrap p{
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    h2 {
+    text-align: center; 
+    }
+    input[type=text] {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 5px;
+        background: rgba(0, 0, 0, 0.10);
+        border: none;
+        outline: none;
+        border-bottom: 1px dotted #fff;
+        border-radius: 5px;
+        color: rgb(160, 142, 142);
+        margin: 5px;
+        font-weight: bold;
+    }
+    input[type=submit] {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 0;
+        margin-top: 30px;
+        outline: none;
+        border: none;
+        background: #60adde;
+        opacity: 0.7;
+        border-radius: 20px;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    input[type= submit]:hover {
+        background: #003366;
+        opacity: 0.7;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h2>register Class</h2>
+        <form action="/classregister" method="POST"  >
+            <input type="text" placeholder="Class name" maxlength="30" name="classname" required>
+            <input type="text" placeholder="Maximum number of students" maxlength="8" name="studentno" required>
+            <input type="submit" value="Register class">
+        </form>      
+    </div>
+</body>
+</html>
